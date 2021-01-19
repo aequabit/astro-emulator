@@ -1,0 +1,24 @@
+id 1
+image
+name Among Us
+uid 5
+
+id 2
+image
+name GTA 5
+uid 1
+
+id 3
+image
+name BattleField 4
+uid 2
+
+id 4
+image
+name Counter Strike GO
+uid 3
+
+id 5
+image
+name Escape from Tarkov
+uid 4

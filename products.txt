@@ -1,0 +1,91 @@
+		BattlEye	false	bool
+		File	"Among Us.zip"	string
+		Free	1	int
+		ID	1	int
++		Image	{byte[24137]}	byte[]
+		Internal	false	bool
+		IPSGroup	0	int
+		Name	"Among Us"	string
+		OnlineCount	0	int
+		ProcessName	"Among Us"	string
+		ProductGroup	5	int
+		Status	1	int
+		UID	11	int
+		Version	1	int
+
+		BattlEye	false	bool
+		File	"GTA 5.zip"	string
+		Free	1	int
+		ID	2	int
++		Image	{byte[4769]}	byte[]
+		Internal	false	bool
+		IPSGroup	0	int
+		Name	"GTA 5"	string
+		OnlineCount	10	int
+		ProcessName	"gta5"	string
+		ProductGroup	1	int
+		Status	1	int
+		UID	1	int
+		Version	1	int
+
+		BattlEye	false	bool
+		File	"BattleField 4.zip"	string
+		Free	1	int
+		ID	4	int
++		Image	{byte[26466]}	byte[]
+		Internal	false	bool
+		IPSGroup	0	int
+		Name	"BattleField 4"	string
+		OnlineCount	1	int
+		ProcessName	"bf4"	string
+		ProductGroup	2	int
+		Status	1	int
+		UID	3	int
+		Version	1	int
+
+		BattlEye	false	bool
+		File	"BattleField 4 (Paid).zip"	string
+		Free	0	int
+		ID	5	int
++		Image	{byte[26466]}	byte[]
+		Internal	false	bool
+		IPSGroup	7	int
+		Name	"BattleField 4 (Paid)"	string
+		OnlineCount	0	int
+		ProcessName	"bf4"	string
+		ProductGroup	2	int
+		Status	1	int
+		UID	4	int
+		Version	1	int
+
+		BattlEye	false	bool
+		File	"Injector.zip"	string
+		Free	1	int
+		ID	6	int
++		Image	{byte[4058]}	byte[]
+		Internal	true	bool
+		IPSGroup	0	int
+		Name	"CSGO"	string
+		OnlineCount	33	int
+		ProcessName	"csgo"	string
+		ProductGroup	3	int
+		Status	1	int
+		UID	5	int
+		Version	1	int
+
+		BattlEye	false	bool
+		File	"Injector.zip"	string
+		Free	0	int
+		ID	7	int
++		Image	{byte[4058]}	byte[]
+		Internal	true	bool
+		IPSGroup	11	int
+		Name	"CSGO (Paid)"	string
+		OnlineCount	1	int
+		ProcessName	"csgo"	string
+		ProductGroup	3	int
+		Status	1	int
+		UID	6	int
+		Version	1	int
+
+ 

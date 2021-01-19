@@ -34,15 +34,18 @@ namespace Astro.Server
         {
             get
             {
-                if (__instance == null)
-                {
-                    // TODO: Fix config serialization
-                    __instance = new Config();
-                    __instance.Populate();
-                    //__instance = XmlManager.Deserialize<Config>(File.ReadAllText(Path));
-                }
+                //if (__instance == null)
+                //{
+                //    // TODO: Fix config serialization
+                //    __instance = new Config();
+                //    __instance.Populate();
+                //    //__instance = XmlManager.Deserialize<Config>(File.ReadAllText(Path));
+                //}
 
-                return __instance;
+                //return __instance;
+                var config = new Config();
+                config.Populate();
+                return config;
             }
         }
 
@@ -113,8 +116,11 @@ namespace Astro.Server
 
             Groups = new List<Group>
             {
-                 new Group(1, 1, "Among Us"),
-                 new Group(2, 2, "GTA 5"),
+                 new Group(1, 5, "Among Us"),
+                 new Group(2, 1, "GTA 5"),
+                 new Group(3, 2, "BattleField 4"),
+                 new Group(4, 3, "Counter Strike GO"),
+                 new Group(5, 4, "Escape from Tarkov"),
                  new Group(1337, 1337, "memeware")
             };
 
@@ -156,7 +162,7 @@ namespace Astro.Server
                 new Product()
                 {
                     ID = 1,
-                    UID = 1,
+                    UID = 11,
                     IPSGroup = 0,
                     ProductGroup = 1,
                     Name = "Among Us",
@@ -174,7 +180,7 @@ namespace Astro.Server
                 new Product()
                 {
                     ID = 2,
-                    UID = 2,
+                    UID = 1,
                     IPSGroup = 0,
                     ProductGroup = 2,
                     Name = "GTA 5",
@@ -183,10 +189,82 @@ namespace Astro.Server
                     Status = 1,
                     Version = 1,
                     Free = 1,
-                    Internal = true,
+                    Internal = false,
                     BattlEye = false,
                     OnlineCount = 420,
                     Image = File.ReadAllBytes(AppDomain.CurrentDomain.BaseDirectory + "Images\\Products\\GTA 5.png")
+                },
+
+                new Product()
+                {
+                    ID = 4,
+                    UID = 3,
+                    IPSGroup = 0,
+                    ProductGroup = 3,
+                    Name = "BattleField 4",
+                    File = "BattleField 4.zip",
+                    ProcessName = "bf4",
+                    Status = 1,
+                    Version = 1,
+                    Free = 1,
+                    Internal = false,
+                    BattlEye = false,
+                    OnlineCount = 420,
+                    Image = File.ReadAllBytes(AppDomain.CurrentDomain.BaseDirectory + "Images\\Products\\BattleField 4.png")
+                },
+
+                new Product()
+                {
+                    ID = 5,
+                    UID = 4,
+                    IPSGroup = 7,
+                    ProductGroup = 3,
+                    Name = "BattleField 4 (Paid)",
+                    File = "BattleField 4 (Paid).zip",
+                    ProcessName = "bf4",
+                    Status = 1,
+                    Version = 1,
+                    Free = 1,
+                    Internal = false,
+                    BattlEye = false,
+                    OnlineCount = 420,
+                    Image = File.ReadAllBytes(AppDomain.CurrentDomain.BaseDirectory + "Images\\Products\\BattleField 4.png")
+                },
+
+                new Product()
+                {
+                    ID = 6,
+                    UID = 5,
+                    IPSGroup = 0,
+                    ProductGroup = 4,
+                    Name = "CSGO",
+                    File = "Injector.zip",
+                    ProcessName = "csgo",
+                    Status = 1,
+                    Version = 1,
+                    Free = 1,
+                    Internal = true,
+                    BattlEye = false,
+                    OnlineCount = 420,
+                    Image = File.ReadAllBytes(AppDomain.CurrentDomain.BaseDirectory + "Images\\Products\\CSGO.png")
+                },
+
+                new Product()
+                {
+                    ID = 7,
+                    UID = 6,
+                    IPSGroup = 11,
+                    ProductGroup = 4,
+                    Name = "CSGO (Paid)",
+                    File = "Injector.zip",
+                    ProcessName = "csgo",
+                    Status = 1,
+                    Version = 1,
+                    Free = 0,
+                    Internal = true,
+                    BattlEye = false,
+                    OnlineCount = 420,
+                    Image = File.ReadAllBytes(AppDomain.CurrentDomain.BaseDirectory + "Images\\Products\\CSGO.png")
                 },
 
                 new Product()

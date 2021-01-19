@@ -26,7 +26,7 @@ namespace NetworkTypes
 			{
 				if (File.Exists(Environment.CurrentDirectory + "\\Images\\Groups\\" + this.Name + ".png"))
 				{
-					using (FileStream fileStream = File.Open(Environment.CurrentDirectory + "\\Images\\Groups\\" + this.Name + ".png", FileMode.Open, FileAccess.Read, FileShare.None))
+					using (FileStream fileStream = File.Open(Environment.CurrentDirectory + "\\Images\\Groups\\" + this.Name + ".png", FileMode.Open, FileAccess.Read, FileShare.Read))
 					{
 						byte[] array = new byte[(int)fileStream.Length];
 						int num = (int)fileStream.Length;

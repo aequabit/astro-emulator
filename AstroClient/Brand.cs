@@ -8,7 +8,7 @@ namespace Main
 	{
 		public static string Version = "0.31b";
 
-		public static Companys Company = Companys.Astro;
+		public static Companys Company = Companys.Maverick;
 
 		public static string ExeName = Process.GetCurrentProcess().MainModule.ModuleName;
 
